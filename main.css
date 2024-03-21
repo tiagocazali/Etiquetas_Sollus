@@ -1,18 +1,13 @@
 h1 { border-bottom-style: inset; }
 
+body{ background-color: #90EE90 }
+
+table{ background-color: white }
+
 .tarefa-selecionada { color: red; font-style: italic; }
 .tarefa-normal { color: black; }
-
-img.moeda1-00 { height: 84px; width: 84px; margin-bottom: 5px; }
-img.moeda0-50 { height: 66px; width: 66px; margin-bottom: 5px; }
-img.moeda0-25 { height: 76px; width: 76px; margin-bottom: 5px; }
-img.moeda0-10 { height: 60px; width: 60px; margin-bottom: 5px; }
 
 .exclui { color: red; cursor: pointer; } /*Faz o mouse virar um dedinho */
 .alinha-direita { text-align: right; }
 
 img.normal { float: left; height: 320px; width: 320px; }
-
-#teste{
-    background-color: blueviolet;
-}
