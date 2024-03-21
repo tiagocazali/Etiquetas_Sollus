@@ -3,58 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas Sollus</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/zGJyY8VNfpj2o+guI83D6vgT/L3Y8C9C+LQCWgdYQ/+qYyk+lQSxR12" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/icone_folha.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/main.css">
+    <title>Sollus Paisagismo</title>
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="/LOGO SOLLUS PNG.png" alt="Logo da Sollus" class="img-fluid">
+            </div>
+            <div class="col-sm-7">
+                <h1>Impressão de Etiquetas - Sollus</h1>
+                <form>
+                    <p>
+                        <label for="inProduto">Produto:</label>
+                        <input type="text" class="form-control" id="inProduto" required autofocus>
+                    </p>
+                    <p>
+                        <label for="inPreco">Preço:</label>
+                        <input type="text" class="form-control" id="inPreco" required>
+                    </p>
+                    <p>
+                        <label for="inQuant">Quantidade:</label>
+                        <input type="text" class="form-control" id="inQuant" required>
+                    </p>
+                    <input type="submit" value="Adicionar" class="btn btn-primary float-right mb-3">
+                </form>
 
-    <h1>Etiquetas Sollus</h1>
+                <!-- Aqui fica a Tabela com a lista dos Produtos -->
+                <table class="table table-striped">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </table>
 
-    <div class="form-group">
-        <label for="nome-produto" class="form-label"><i class="fas fa-leaf"></i> Nome do Produto:</label>
-        <input type="text" class="form-control" id="nome-produto" placeholder="Digite o nome do produto">
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="preco" class="form-label"><i class="fas fa-dollar-sign"></i> Preço:</label>
-        <input type="number" class="form-control" id="preco" placeholder="Digite o preço">
-    </div>
-    <div class="form-group">
-        <label for="quantidade" class="form-label"><i class="fas fa-cubes"></i> Quantidade:</label>
-        <input type="number" class="form-control" id="quantidade" placeholder="Digite a quantidade">
-    </div>
-    <button type="button" class="btn btn-success" id="btn-adicionar"><i class="fas fa-plus"></i> Adicionar</button>
 
-    <table id="lista-produtos" class="table table-striped">
-        <thead>
-            <tr>
-                <th>Nome do Produto</th>
-                <th>Preço</th>
-                <th>Quantidade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Produto 1</td>
-                <td>R$ 10,00</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Produto 2</td>
-                <td>R$ 20,00</td>
-                <td>2</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7U19mOWVpGEThzMQuCV5iy95r8DOmBnm5f6gy"
-        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
