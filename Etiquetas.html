@@ -4,54 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressão de Etiquetas - Sollus</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/icone_folha.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/main.css">
+    <title>Impressão de Etiquetas - Sollus</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3">
+
+            <div class="col-sm-3 mt-3">
                 <img src="/LOGO SOLLUS PNG.png" alt="Logo da Sollus" class="img-fluid">
             </div>
-            <div class="col-sm-9">
+
+            <div class="col-sm-8">
                 <h1>Impressão de Etiquetas - Sollus</h1>
-                <div class="row">
-                    <form class="col-sm-12">
+
+                <div class="row mt-3">
+                    <form class="col-sm-9">
                         <div class="form-row">
+
                             <div class="form-group col-sm-5">
-                                <input type="text" class="form-control" id="inProduto" placeholder="Nome do Produto"
-                                    required autofocus>
+                                <input type="text" class="form-control" id="inProduto" placeholder="Nome do Produtor"
+                                    equired autofocus>
                             </div>
+
                             <div class="form-group col-sm-3">
                                 <input type="text" class="form-control" id="inPreco" placeholder="Preço" required>
                             </div>
+
                             <div class="form-group col-sm-3">
                                 <input type="text" class="form-control" id="inQuant" placeholder="Quantidade" required>
                             </div>
+
                             <div class="form-group col-sm-1">
                                 <input type="submit" value="Adicionar" class="btn btn-primary">
                             </div>
-                            <div class="form-group col-sm-12 mt-3">
+
+                            <div class="form-group col-sm-9 mt-3">
                                 <input type="button" value="Criar Etiquetas" class="btn btn-primary float-left">
                             </div>
+
                         </div>
                     </form>
                 </div>
+
                 <!-- Aqui fica a Tabela com a lista dos Produtos -->
                 <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Produto</th>
-                            <th>Preço</th>
-                            <th>Quantidade</th>
-                            <th>Ação</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Aqui você pode adicionar as linhas da tabela dinamicamente usando JavaScript -->
-                    </tbody>
+
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Ação</th>
+                    </tr>
+
                 </table>
+
             </div>
         </div>
     </div>
