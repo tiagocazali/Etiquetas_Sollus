@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="shortcut icon" href="/icone_folha.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/main.css">
-    <title>Sollus Paisagismo</title>
+    <title>Impressão de Etiquetas - Sollus</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,30 +14,32 @@
             <div class="col-sm-3">
                 <img src="/LOGO SOLLUS PNG.png" alt="Logo da Sollus" class="img-fluid">
             </div>
-
-            <div class="col-sm-8">
+            <div class="col-sm-9">
                 <h1>Impressão de Etiquetas - Sollus</h1>
-                <form>
-                    <div class="col-sm-5">
-                        <label for="inProduto">Produto:</label>
-                        <input type="text" class="form-control" id="inProduto" required autofocus>
-                    </div>
-                    <div class="col-sm-2">
-                        <label for="inPreco">Preço:</label>
-                        <input type="text" class="form-control" id="inPreco" required>
-                    </div>
-
-                    <div class="col-sm-2">
-                        <label for="inQuant">Quantidade:</label>
-                        <input type="text" class="form-control" id="inQuant" required>
-                    </div>
-
-                    <input type="submit" value="Adicionar" class="btn btn-primary float-right mb-3">
-
-                </form>
-
+                <div class="row">
+                    <form class="col-sm-12">
+                        <div class="form-row">
+                            <div class="form-group col-sm-5">
+                                <input type="text" class="form-control" id="inProduto" placeholder="Nome do Produto"
+                                    required autofocus>
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <input type="text" class="form-control" id="inPreco" placeholder="Preço" required>
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <input type="text" class="form-control" id="inQuant" placeholder="Quantidade" required>
+                            </div>
+                            <div class="form-group col-sm-1">
+                                <input type="submit" value="Adicionar" class="btn btn-primary">
+                            </div>
+                            <div class="form-group col-sm-12 mt-3">
+                                <input type="button" value="Criar Etiquetas" class="btn btn-primary float-left">
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <!-- Aqui fica a Tabela com a lista dos Produtos -->
-                <table class="table table-striped ">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>Produto</th>
@@ -50,8 +48,10 @@
                             <th>Ação</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <!-- Aqui você pode adicionar as linhas da tabela dinamicamente usando JavaScript -->
+                    </tbody>
                 </table>
-
             </div>
         </div>
     </div>
