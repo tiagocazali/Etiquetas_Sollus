@@ -22,33 +22,39 @@
             <div class="col-sm-9">
                 <h1>Impressão de Etiquetas - Sollus</h1>
                 <form>
-                    <p>
+                    <div class="col-sm-5">
                         <label for="inProduto">Produto:</label>
                         <input type="text" class="form-control" id="inProduto" required autofocus>
-                    </p>
-                    <p>
+                    </div>
+                    <div class="col-sm-2">
                         <label for="inPreco">Preço:</label>
                         <input type="text" class="form-control" id="inPreco" required>
-                    </p>
-                    <p>
+                    </div>
+
+                    <div class="col-sm-2">
                         <label for="inQuant">Quantidade:</label>
                         <input type="text" class="form-control" id="inQuant" required>
-                    </p>
-                    <input type="submit" value="Adicionar" class="btn btn-primary float-right mb-3">
-                </form>
+                    </div>
 
-                <!-- Aqui fica a Tabela com a lista dos Produtos -->
-                <table class="table table-striped">
+                    <input type="submit" value="Adicionar" class="btn btn-primary float-right mb-3">
+
+                </form>
+            </div>
+
+            <!-- Aqui fica a Tabela com a lista dos Produtos -->
+            <table class="table table-striped ">
+                <thead>
                     <tr>
                         <th>Produto</th>
                         <th>Preço</th>
                         <th>Quantidade</th>
                         <th>Ação</th>
                     </tr>
-                </table>
+                </thead>
+            </table>
 
-            </div>
         </div>
+
     </div>
 
     <script src="script.js"></script>
