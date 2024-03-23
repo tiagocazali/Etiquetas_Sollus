@@ -46,3 +46,48 @@ tbProdutos.addEventListener("click", (e) => {
         }
     }
 })
+
+
+// Chamada para download do arquivo ao clicar em um botão Gerar Etiquetas
+document.getElementById('btCriarEtiquetas').addEventListener('click', () => {
+
+    const [produtos, precos] = getProdutosAsText();
+    downloadTxtFile(produtos, 'protutos.txt');
+    downloadTxtFile(precos, 'precos.txt');
+});
+
+
+//Cria o arquivo para download
+function downloadTxtFile(texto_arquivo, nome_arquivo) {
+
+    const blob = new Blob([texto_arquivo], { type: 'text/plain' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = nome_arquivo;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+
+// Função que ira percorrer a Tabela de itens e salvar eles em variáveis separadas
+function getProdutosAsText() {
+
+    const linhas = Array.from(document.querySelectorAll('table tr')).slice(1);
+    let produtosText = '';
+    let precosText = '';
+
+    linhas.forEach(linha => {
+        const [produto, preco, quant] = linha.querySelectorAll('td');
+        const nomeProduto = produto.innerText;
+        const precoProduto = preco.innerText;
+        const quantidade = parseInt(quant.innerText);
+
+        for (let i = 0; i < quantidade; i++) {
+            produtosText += `${nomeProduto}\n`;
+            precosText += `R$ ${precoProduto}\n`;
+        }
+    });
+
+    return [produtosText, precosText];
+}
